@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Panier javascript DWWM2019</title>
+<script src="panier.js" defer></script>
+</head>
+<style>
+  * {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  #panier {
+    background-color: #ccc;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 1.2em;
+    width: 60%;
+    margin-top: 50px;
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  legend {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+    font-style: italic;
+    font-size: 1.2em;
+  }
+
+  body {
+    background-color: #ADD6D6
+  }
+</style>
+
+<body>
+
+  <fieldset id="panier">
+
+    <legend>Gestion panier</legend>
+
+    <TABLE>
+      <TR>
+        <TD>Qté :</TD>
+        <TD><input type="text" id="qt1" name="qt1" value="1"  /></TD>
+        <TD>Prix unitaire :</TD>
+        <TD><input type="text" id="pu1" name="pu1" placeholder="0" /></TD>
+        <TD>Prix :</TD>
+        <TD><input type="text" id="prixtot1" name="prixtot1" value="" readonly="true" /></TD>
+      </TR>
+
+      <TR>
+        <TD>Qté :</TD>
+        <TD><input type="text" id="qt2" name="qt2" Value="1" onblur="" /></TD>
+        <TD>Prix unitaire :</TD>
+        <TD><input type="text" id="pu2" name="pu2" placeholder="0" onblur="" /> </TD>
+        <TD>Prix :</TD>
+        <TD><input type="text" id="prixtot2" name="prixtot2" value=""  readonly="true" /></TD>
+      </TR>
+
+      <TR>
+        <TD></TD>
+        <TD></TD>
+        <TD></TD>
+        <TD></TD>
+        <TD></TD>
+        <TD>______________</TD>
+      </TR>
+
+      <TR>
+        <TD></TD>
+        <TD></TD>
+        <TD></TD>
+        <TD></TD>
+        <TD>Prix total TTC (€)</TD>
+        <TD><INPUT type="number" id="total" name="total"  readonly="readonly" /></TD>
+      </TR>
+    </TABLE>
+  </fieldset>
+
+
+  </script>
+
+
+</body>
+
+</html>
