@@ -1,11 +1,11 @@
-function Calcul() {
+function calcul() {
     document.querySelector("#prixtot1").value = Number(document.querySelector("#qt1").value) * Number(document.querySelector("#pu1").value);
     document.querySelector("#prixtot2").value = Number(document.querySelector("#qt2").value) * Number(document.querySelector("#pu2").value);
     document.querySelector("#total").value = Number(document.querySelector("#prixtot1").value) + Number(document.querySelector("#prixtot2").value);
 
 }
 
-function control(_element_input) {
+function getControl(_element_input) {
     let monControl = true;
     let chaine = _element_input.value;
     if (isNaN(chaine) && chaine.length>0) {
@@ -21,9 +21,9 @@ function control(_element_input) {
 }
 document.querySelectorAll("input[type=text]").forEach(item => { item.addEventListener("input", function (event) {  
     
-    if( control(item)==true) 
+    if( getControl(item)==true) 
     { 
-        Calcul();
+        calcul();
     } }) });
 
 
