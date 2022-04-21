@@ -1,0 +1,42 @@
+input[type=text]
+{ margin: 15px; width: 100px;
+}
+input[type=button]{
+ 
+    width:100px;
+margin:15px 15px  15px 140px;   
+    }
+
+fieldset {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    background-color: rgb(193, 236, 222);
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    
+}
+.tab { 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:repeat(1,auto); 
+    grid-gap: 10px;
+
+}
+
+
+#rouge { 
+    grid-column: 1/2; grid-row: 1/2; }
+#btnrouge {  grid-column: 1/2; grid-row: 1/2;  }
+
+#vert{ grid-column: 2/3; grid-row: 1/2;}
+#btnvert { grid-column: 2/3; grid-row: 1/2;}
+#bleu{grid-column: 3/4; grid-row: 1/2;}
+#btnbleu{grid-column: 3/4; grid-row: 1/2;}
+h2 { 
+    text-align: center;
+    text-transform:uppercase;
+    color: rgb(73, 72, 69);
+}
+
