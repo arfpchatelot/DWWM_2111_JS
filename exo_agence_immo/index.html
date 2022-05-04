@@ -1,0 +1,188 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Carousel Template  Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="agence immobilière Immo du chateau">
+    <meta name="author" content="CRM">
+
+    <!--JavaScript-->
+    <script type="text/javascript" src="js/main.js" defer></script>
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reponsive.css" >
+    <link rel="stylesheet" href="css/formulaire.css" >
+
+</head>
+
+  <body>
+
+  
+   
+  <div class="container">
+
+       
+<!--votre navbar ici -->
+
+   <div class="navbar-wrapper">
+    
+      <div class="container">
+
+        <div class="navbar navbar-inverse">
+          <div class="navbar-header">
+            <!-- Responsive Navbar Part 1:-->
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapse-1" >
+                     <span class="sr-only">Apparaitre/Disparaitre Navigation</span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                     <span class="icon-bar"></span>
+                      
+                    </button>
+            <a class="navbar-brand" href="#"><div id="logo"></div></a>
+            </div>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="navbar-collapse collapse" id="collapse-1">
+              <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Accueil</a></li>
+                <li><a href="#about">Agence</a></li>
+                <li><a href="#contact">Services</a></li>
+                <!-- Read about Bootstrap dropdowns at https://getbootstrap.com/2.3.0/javascript.html#dropdowns -->
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Achats/ventes<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Appartements</a></li>
+                    <li><a href="#">Maisons</a></li>
+                    <li><a href="#">locaux professionnels</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Spécial investisseur</li>
+                    <li><a href="#">Garages</a></li>
+                    <li><a href="#">Terrains</a></li>
+                  </ul>
+                </li>
+                 <li><a href="#contact">Estimation</a></li>
+                 <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">Locations<b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Appartements</a></li>
+                    <li><a href="#">Maisons</a></li>
+                    <li><a href="#">locaux professionnels</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Spécial loueur</li>
+                    <li><a href="#">Garages</a></li>
+                    <li><a href="#">Terrains</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact">Estimation</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    </div><!-- /.navbar-wrapper -->
+
+
+    <!-- Carousel
+    ================================================== -->
+    <div id="myCarousel" class="carousel slide">
+      <div class="carousel-inner">
+        
+      </div>
+      <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div><!-- /.carousel -->
+
+
+
+    <!-- contenu formulaire
+    ================================================== -->
+    <!--  -->
+    <div class="parent">
+     
+      <div class="enfant">
+        <form action="index.html" id="formContact"  method="GET" >
+          <fieldset>
+            <legend>Formulaire de contact</legend>
+          <p>Pour nous contacter sans attendre, veuillez renseigner le formulaire suivant. <br>
+          Les champs précédés du signe * sont obligatoires</p>
+ 
+        <div id="groupe">
+          <label for="civilite" class="info">Civilité</label>
+          <select name="civilite" id="civilite" class="listDeroulante">
+            <option class="opt" value="nothing"></option>
+            <option class="opt" value="madame">Mme</option>
+            <option class="opt" value="mademoiselle">Mlle</option>
+            <option class="opt" value="monsieur">M.</option>
+          </select>
+      
+        
+        
+          <label for="nom" class="info">Nom*</label>
+          <input type="text" name="nom" id="nom" class="textInp">
+       
+  
+        
+          <label for="prenom" class="info">Prenom</label>
+          <input type="text" name="prenom" id="prenom" class="textInp">
+       
+  
+     
+          <label for="adresse" class="info">Adresse</label>
+          <input type="text" name="adresse" id="adresse" class="textInp">
+       
+  
+       
+          <label for="telephone" class="info">Téléphone*</label>
+          <input type="tel" name="tel" id="tel" class="textInp" maxlength="10"> 
+  
+  
+      
+          <label for="email" class="info">E-mail*</label>
+          <input type="mail" name="email" id="email" class="textInp">
+    
+  
+     
+          <label for="objet">Objet de votre message</label>
+          <input type="text" name="obj" id="obj" class="textInp">
+  
+     
+          <label for="message">Votre message</label>
+  <textarea name="message" id="message" cols="30" rows="4"></textarea>
+      
+
+        
+          <input type="button" value="Envoi" id="envoi" name="envoi">
+        </div>
+      </form>
+
+    </fieldset>
+      </div>
+ 
+    </div>
+    
+
+
+    <div class="container marketing">
+      <!-- FOOTER -->
+      <footer>
+        <p class="pull-right"><a href="#">Haut de page</a></p>
+        <p>&copy; 2019 Demo, Centre de réadaptation de Mulhouse. &middot; <a href="#">mentions legales</a> &middot; <a href="#">Plan du  site</a></p>
+      </footer>
+
+    </div>
+
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-3.2.1.js"></script>
+<script src="js/bootstrap.js"></script>
+    <script>
+
+    </script>
+    
+  </body>
+</html>
