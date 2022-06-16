@@ -22,7 +22,7 @@ if (getCookie("expediteur") != false) {
   let enfant = document.querySelector(".enfant");
   enfant.remove();
   let expediteur = getCookie("expediteur");
-  let boitemessage = document.createElement('div');
+  let boitemessage = document.createElement("div");
   boitemessage.setAttribute("style", "color:grey; font-size: 1.4em; font-family:impact;text-align:center;height:30%");
   boitemessage.innerHTML = "Bonjour M.(e)<u>" + expediteur + "</u> votre message nous a bien été envoyé(e). Nous vous contacterons dans les meilleurs délais.";
   parent.appendChild(boitemessage);
